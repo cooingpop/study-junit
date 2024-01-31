@@ -43,6 +43,7 @@ public class JunitApplicationTests03 {
         assertDoesNotThrow(() -> System.out.println("테스트2"));
     }
 
+    // 특정 테스트는 스킵할 수 있는 어노테이션
     @SkipTestIfAnnotationPresent
     @Order(3)
     @DisplayName("테스트3")
